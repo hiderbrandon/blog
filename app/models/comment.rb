@@ -14,6 +14,6 @@ class Comment < ApplicationRecord
   belongs_to :user
   #validations
   
-  validate_presence_of :post_id
-  validate_presence_of :body
+  validates_presence_of :post_id
+  validates_presence_of :body
 end
