@@ -1,0 +1,12 @@
+
+
+<%= Comment.all.each do |comment| %>
+
+  <p> 
+  <strong>usuario <%=h(comment.created_at)%> </strong> <br/> 
+  
+  <%= h(comment.body) %>
+  </p>
+
+
+<% end %>
